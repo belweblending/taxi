@@ -1,1 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtHouse Taxi - Работа и Услуги</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">ArtHouse<span> TAXI</span></div>
+        <div class="nav-links">
+            <a href="#services">Варианты работы</a>
+            <a href="#b2b">Организациям</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+        <a href="#connect" class="nav-btn">Позвонить</a>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="card hero-text-card">
+                    <h1>Работа в Такси<br>и Доставке</h1>
+                    <p>Подключаем водителей и курьеров. На авто компании, личном автомобиле или пешком. Официальное оформление в РБ.</p>
+                    <div class="hero-buttons">
+                        <a href="#connect" class="btn btn-primary">Заполнить анкету</a>
+                        <a href="#services" class="btn btn-outline">Узнать условия</a>
+                    </div>
+                </div>
+                <div class="card hero-image-card">
+                    <img src="caver.avif" alt="Автомобиль такси">
+                    <div class="floating-badge">
+                        <span>🇧🇾</span> Работаем по всей Беларуси
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="features-section">
+        <div class="container">
+            <h2>Выберите свой формат</h2>
+            <div class="services-grid">
+                <div class="card service-item">
+                    <div class="service-icon">🚖</div>
+                    <h3>На авто компании</h3>
+                    <p>Работа в такси на новых автомобилях парка.</p>
+                    <ul class="service-list">
+                        <li>Гибкий график</li>
+                        <li>Оформление по ТК РБ</li>
+                        <li>Поддержка 24/7</li>
+                        <li>Помощь в трудоустройстве</li>
+                    </ul>
+                </div>
+
+                
+                <div class="card service-item">
+                    <div class="service-icon">🚗</div>
+                    <h3>На своем авто</h3>
+                    <p>Зарабатывайте на личном автомобиле в свободное время.</p>
+                    <ul class="service-list">
+                        <li>Свободный график</li>
+                        <li>Оформление по ТК РБ</li>
+                        <li>Поддержка 24/7</li>
+                        <li>Помощь в трудоустройстве</li>
+                    </ul>
+                </div>
+
+                <div class="card service-item">
+                    <div class="service-icon">📦</div>
+                    <h3>Яндекс Доставка</h3>
+                    <p>Для водителей на личном авто и пеших курьеров.</p>
+                    <ul class="service-list">
+                        <li>Любой транспорт или пешком</li>
+                        <li>Свободный график</li>
+                        <li>Ежедневные выплаты</li>
+                        <li>Поддержка 24/7</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="fleet-section">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <h2>Наши автомобили</h2>
+                    <p style="color: #777; margin-top: 5px;">Новые BYD Yuan UP</p>
+                </div>
+                <div class="slider-nav">
+                    <div class="swiper-button-prev-custom">←</div>
+                    <div class="swiper-button-next-custom">→</div>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide fleet-card">
+                        <div class="fleet-image">
+                            <img src="front-bez-far.jpg" alt="Вид спереди">
+                            <span class="fleet-tag">Экстерьер</span>
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Новый кузов</h3>
+                            <p>Современный дизайн Geely Emgrand. Белый цвет, хромированная решетка радиатора. Машина выглядит дорого.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide fleet-card">
+                        <div class="fleet-image">
+                            <img src="back.jpg" alt="Вид сзади">
+                            <span class="fleet-tag">Комфорт+</span>
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Проходит в тарифы</h3>
+                            <p>Свежий год выпуска и класс автомобиля позволяют работать в тарифах "Комфорт" и выше. Высокий средний чек.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide fleet-card">
+                        <div class="fleet-image">
+                            <img src="front-fara.jpg" alt="LED оптика">
+                            <span class="fleet-tag">Технологии</span>
+                        </div>
+                        <div class="fleet-info">
+                            <h3>LED Оптика</h3>
+                            <p>Яркие светодиодные фары и ходовые огни. Отличная видимость ночью и стильный внешний вид днем.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide fleet-card">
+                        <div class="fleet-image">
+                            <img src="right.jpg" alt="Вид справа">
+                            <span class="fleet-tag">Состояние</span>
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Идеальная геометрия</h3>
+                            <p>Кузов без вмятин, царапин и сколов. Автомобили в состоянии "как из салона". Приятно ездить самому.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide fleet-card">
+                        <div class="fleet-image">
+                            <img src="left.jpg" alt="Вид слева">
+                            <span class="fleet-tag">Обслуживание</span>
+                        </div>
+                        <div class="fleet-info">
+                            <h3>Полностью обслужена</h3>
+                            <p>Новая резина, чистые диски. Техническая часть под полным контролем механиков парка.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="b2b" class="business-section">
+        <div class="container">
+            <div class="business-header">
+                <span class="tag">Юридическим лицам</span>
+                <h2>Аренда авто для бизнеса</h2>
+                <p>Решаем транспортные задачи вашей компании под ключ.</p>
+            </div>
+            
+      
+            <div class="b2b-big-card">
+                
+             
+                <div class="b2b-image-side">
+                 
+                    <img src="cars.jpg" alt="Авто для бизнеса">
+                    
+                    
+                    <div class="b2b-badge">
+                        <span>⚡️</span> Автопарк в наличии
+                    </div>
+                </div>
+
+                
+                <div class="b2b-info-side">
+                    <div class="b2b-service-item">
+                        <div class="icon-box">🚗</div>
+                        <div>
+                            <h3>Аренда без водителя</h3>
+                            <p>Долгосрочная аренда для сотрудников. Берем на себя обслуживание, страховку и подменный фонд.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="b2b-divider"></div>
+
+                    <div class="b2b-service-item">
+                        <div class="icon-box">👔</div>
+                        <div>
+                            <h3>Аренда с экипажем</h3>
+                            <p>Персональные водители на авто бизнес-класса. Трансферы, встречи делегаций, развоз персонала.</p>
+                        </div>
+                    </div>
+
+                    <a href="#connect" class="btn btn-yellow full-width" style="margin-top: 20px;">Получить предложение</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="calc" class="calc-section">
+        <div class="container">
+            <div class="card calc-card">
+                <h2>Калькулятор заработка</h2>
+                <div class="calc-grid">
+                    <div class="calc-input">
+                        <label>Занятость:</label>
+                        <div class="form-group">
+                            <select id="calc-hours">
+                                <option value="70">Подработка (4 ч)</option>
+                                <option value="160" selected>Полный день (8 ч)</option>
+                                <option value="240">Максимум (12 ч)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="calc-input">
+                        <label>График:</label>
+                        <div class="form-group">
+                            <select id="calc-days">
+                                <option value="9">2 дня в неделю</option>
+                                <option value="22" selected>5 дней в неделю</option>
+                                <option value="30">Каждый день</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-result">
+                    <div class="result-label">Ваш возможный доход:</div>
+                    <div class="result-value">
+                        ~ <span id="total-income">3 520</span> BYN 
+                        <span>/ мес</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect" class="form-section">
+        <div class="container">
+            <div class="card form-card">
+                <h2>Оставить заявку</h2>
+                <p class="form-desc">Заполните форму, и мы свяжемся с вами для уточнения деталей.</p>
+                
+                <form id="appForm">
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="+375 (__) ___-__-__" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="type">
+                            <option value="" disabled selected>Выберите направление</option>
+                            <option value="Авто компании">🚖 На авто компании</option>
+                            <option value="Личное авто">🚗 На личном авто</option>
+                            <option value="Доставка">📦 Курьер / Доставка</option>
+                            <option value="Организация">🤝 Для организации (B2B)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width submit-btn">Отправить</button>
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-col info-col">
+                    <div class="logo logo-footer">ArtHouse<span> TAXI</span></div>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-row">
+                            <span class="c-icon">📞</span>
+                            <div class="c-links">
+                                <a href="tel:+375259445784">+375 (25) 944-57-84</a>
+                                <a href="tel:+375445869843">+375 (44) 586-98-43</a>
+                            </div>
+                        </div>
+
+                       
+                        <div class="contact-row">
+                            <span class="c-icon">🕒</span>
+                            <div>
+                                <span>Время работы офиса:</span><br>
+                                <strong>С 09:00 до 18:00</strong>
+                            </div>
+                        </div>
+
+                        
+                        <div class="contact-row">
+                            <span class="c-icon">✉️</span>
+                            <a href="mailto:ArtHouse193669618@yandex.by" class="email-link">ArtHouse193669618@yandex.by</a>
+                        </div>
+
+                        <div class="contact-row">
+                            <span class="c-icon">📍</span>
+                            <div>
+                                Минский район, а.г. Ждановичи,<br>
+                                ул. Звёздная, д.41, каб.21
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="footer-col dev-col">
+                    <p class="dev-label">Разработка сайта:</p>
+                    
+                   
+                    <a href="https://www.instagram.com/belweblending/" target="_blank" class="dev-link">
+                        <div class="dev-avatar">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Разработчик">
+                        </div>
+                        <div class="dev-info">
+                            <span class="dev-name">Alexei Novikov</span>
+                            <span class="dev-social">@belweblending</span>
+                        </div>
+                    </a>
+                    
+            
+                    <a href="#" class="back-to-top">↑ Наверх</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 ArtHouse Taxi. Все права защищены.</p>
+                <p style="opacity: 0.3; font-size: 11px; margin-top: 5px;">УНП и юридическая информация</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
 
