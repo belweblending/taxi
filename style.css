@@ -202,13 +202,27 @@ a { text-decoration: none; }
 .business-header p { color: rgba(255,255,255,0.6); font-size: 18px; }
 .cta-business { text-align: center; }
 
-/* Большая карточка B2B */
+
 .b2b-big-card {
     background-color: var(--card-dark); border-radius: 30px; overflow: hidden;
     display: grid; grid-template-columns: 1fr 1fr;
     box-shadow: 0 20px 50px rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05);
 }
-.b2b-image-side { position: relative; height: 100%; min-height: 400px; }
+.b2b-info-side .b2b-btn {
+    align-self: center;       
+    margin-top: 50px;     
+    width: auto;           
+    min-width: 260px;        
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .b2b-info-side .b2b-btn {
+        width: 100%;         
+        margin-top: 30px;
+    }
+}
 .b2b-image-side img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .b2b-badge {
     position: absolute; bottom: 20px; left: 20px; background: rgba(255,255,255,0.9);
@@ -273,13 +287,13 @@ footer { background-color: var(--bg-dark); color: #999; padding: 60px 0 20px 0; 
 .contact-row a:hover { color: var(--accent-yellow); }
 .email-link { word-break: break-all; }
 
-/* Правая колонка футера */
+
 .dev-col {
     display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
 }
 .dev-label { font-size: 12px; margin-bottom: 10px; opacity: 0.6; margin-top: 0; }
 
-/* Плашка разработчика */
+
 .dev-link {
     display: inline-flex; align-items: center; background: rgba(255,255,255,0.05);
     padding: 10px 15px; border-radius: 50px; transition: 0.3s;
@@ -291,7 +305,7 @@ footer { background-color: var(--bg-dark); color: #999; padding: 60px 0 20px 0; 
 .dev-name { color: white; font-weight: 600; font-size: 14px; }
 .dev-social { color: var(--accent-yellow); font-size: 12px; }
 
-/* Кнопка "Наверх" */
+
 .back-to-top {
     font-size: 12px; color: #777; text-decoration: none;
     border: 1px solid rgba(255,255,255,0.1); padding: 8px 15px;
@@ -300,9 +314,51 @@ footer { background-color: var(--bg-dark); color: #999; padding: 60px 0 20px 0; 
 .back-to-top:hover { background: #fff; color: #000; border-color: #fff; }
 
 .footer-bottom { padding-top: 20px; font-size: 13px; opacity: 0.5; }
+.map-col {
+    flex: 1; 
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: filter 0.3s;
+}
 
 
-/* --- 11. АДАПТИВНОСТЬ (ВСЁ В ОДНОМ МЕСТЕ) --- */
+.map-container:hover {
+    filter: grayscale(0%) invert(0%);
+}
+
+/* ОБНОВЛЕНИЕ АДАПТИВА ФУТЕРА */
+@media (max-width: 900px) {
+    .map-col {
+        width: 100%;
+        padding: 0;
+        margin: 30px 0; 
+    }
+    
+    .map-container {
+        height: 300px; 
+    }
+
+  
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-col { order: 1; }
+    .map-col { order: 2; }
+    .dev-col { order: 3; }
+}
+
 @media (max-width: 900px) {
     .nav-links { display: none; }
     .hero-grid { grid-template-columns: 1fr; }
